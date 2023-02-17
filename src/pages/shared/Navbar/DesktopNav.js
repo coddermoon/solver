@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../../../assets/images/logo.svg";
 
-import { FiSettings } from "react-icons/fi";
+import { MdOutlineApps } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 import {
   activeClassName,
@@ -43,7 +43,7 @@ const DesktopNav = () => {
               isActive ? activeClassName : normalClassName
             }
           >
-            <FiSettings /> <span className="hidden md:block"> Tools</span>
+            <MdOutlineApps/> <span className="hidden md:block"> Tools</span>
           </NavLink>
 </div>
         </div>

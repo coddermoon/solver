@@ -1,11 +1,15 @@
 import { AiOutlineBell, AiOutlineQuestionCircle, AiOutlineUser } from "react-icons/ai";
-import {MdOutlineLightMode } from "react-icons/md";
+import {MdOutlineApps, MdOutlineLightMode } from "react-icons/md";
+import {RiTranslate2 } from "react-icons/ri";
+import {BsChatLeft } from "react-icons/bs";
+import {VscBell } from "react-icons/vsc";
+import {IoSettingsOutline } from "react-icons/io5";
 
-import { FiSearch, FiSettings } from "react-icons/fi";
+import { FiSearch, FiSettings,FiEdit2 } from "react-icons/fi";
 
 export const navItems = [
 {name: 'Ask',icons:AiOutlineQuestionCircle,path:'/ask'},
-{name: 'Post',icons:AiOutlineBell,path:'/create-post'},
+{name: 'Post',icons:FiEdit2,path:'/create-post'},
 {name: 'Find',icons:FiSearch,path:'/find'},
 {name: 'You',icons:AiOutlineUser,path:'/users'},
 
@@ -45,11 +49,11 @@ export const userSolvedNavItems = [
 ]
 
 export const toolItems = [
-    {name: 'Ask',icons:AiOutlineQuestionCircle,path:'/tools/ask'},
+    {name: 'Ask',icons:MdOutlineApps,path:'/tools/ask'},
     {name: 'Find',icons: MdOutlineLightMode ,path:'/tools/mode'},
-    {name: 'You',icons:AiOutlineUser,path:'/tools/users'},
-    {name: 'Bell',icons:AiOutlineBell,path:'/tools/bells'},
-    {name: 'Bell',icons:AiOutlineBell,path:'/tools/bella'},
-    {name: 'Bell',icons:FiSettings ,path:'/tools/settings'},
+    {name: 'You',icons: RiTranslate2 ,path:'/tools/users'},
+    {name: 'Bell',icons:VscBell ,path:'/tools/bells'},
+    {name: 'Bell',icons:BsChatLeft,path:'/tools/bella'},
+    {name: 'Bell',icons:IoSettingsOutline ,path:'/tools/settings'},
 ]
 

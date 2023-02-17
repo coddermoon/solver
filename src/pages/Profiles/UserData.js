@@ -27,13 +27,13 @@ const UserData = () => {
  
 
   return (
-    <div className="max-w-[560px] mx-auto bg-white   custom-shadow  my-4 p-5 ">
-      <div className="main-content">
+    <div className="max-w-[560px] mx-auto bg-white   custom-shadow  my-4  ">
+      <div className="main-content w-[80%] mx-auto">
         {/* task section */}
-        <div className="task">
-          <h3 className="px-8 text-xl font-bold mb-5">Task</h3>
+        <div className="task mt-5">
+          <h3 className=" text-lg font-bold mb-2">Task</h3>
 
-          <div className="grid grid-cols-3 gap-5">
+          <div className="grid grid-cols-3 gap-2">
             {taskData.map((taskData) => (
               <TaskCard key={taskData._id} taskData={taskData} />
             ))}
@@ -43,19 +43,19 @@ const UserData = () => {
 
           {/* task section */}
           <div className="my-6">
-            <h3 className="px-8 text-xl font-bold mb-5">Data</h3>
+            <h3 className="text-lg font-bold mb-2">Data</h3>
 
-            <div className="grid grid-cols-4 gap-5">
+            <div className="grid grid-cols-4 gap-2">
               {data.map((taskData) => (
                 <TaskCard key={taskData._id} taskData={taskData} />
               ))}
             </div>
             {/* data part 2 */}
-            <div className="grid grid-cols-2 gap-5">
+            {/* <div className="grid grid-cols-2 gap-5">
               {data2.map((taskData) => (
                 <TaskCard2 key={taskData._id} taskData={taskData} />
               ))}
-            </div>
+            </div> */}
 
           </div>
         </div>

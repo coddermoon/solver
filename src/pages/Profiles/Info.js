@@ -3,18 +3,18 @@ import { FiEdit } from 'react-icons/fi';
 
 const Info = () => {
     return (
-        <div className='max-w-[560px] mx-auto  my-4 mt-5'>
+        <div className='max-w-[560px] mx-auto  mb-4 '>
           <div className="info bg-white p-3 custom-shadow">
 
             
                 <div className='w-[80%] mx-auto text-right'>
-                    <span className=  ' inline-flex text-primaryColor bg-bgColor text-lg items-center ml-auto gap-3 px-2  '><FiEdit/> Edit</span>
+                    <span className=  ' inline-flex text-primaryColor hover:bg-bgColor text-lg items-center ml-auto gap-3 px-2  '><FiEdit/> Edit</span>
                 </div>
           
            
            {/* information table */}
 
-           <table className='my-3 w-[80%] mx-auto' >
+           <table className='mb-3 w-[80%] mx-auto' >
 
 <tr>
   <td className='w-[35%]'>Full Name</td>
