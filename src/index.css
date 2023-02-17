@@ -7,9 +7,19 @@
 body {
   margin: 0;
   padding: 0;
+  overflow-y: scroll;
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
+  
   -moz-osx-font-smoothing: grayscale;
+}
+::-webkit-scrollbar {
+  width: 2px;
+  
+}
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 30px;
 }
 
 code {
