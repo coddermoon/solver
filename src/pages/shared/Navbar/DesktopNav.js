@@ -19,7 +19,8 @@ const DesktopNav = () => {
             Solver
           </span>
         </div>
-        <div className=" flex max-w-[560px] justify-between">
+<div className="min-w-[560px]">
+<div className=" flex justify-between">
           {navItems.map((navItem, index) => (
           <NavLink
               key={index}
@@ -33,8 +34,10 @@ const DesktopNav = () => {
             </NavLink>
           ))}
         </div>
+</div>
         <div>
-          <NavLink
+<div>
+<NavLink
             to="/tools"
             className={({ isActive }) =>
               isActive ? activeClassName : normalClassName
@@ -42,6 +45,7 @@ const DesktopNav = () => {
           >
             <FiSettings /> <span className="hidden md:block"> Tools</span>
           </NavLink>
+</div>
         </div>
       </div>
     </div>

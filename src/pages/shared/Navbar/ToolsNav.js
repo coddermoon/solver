@@ -5,7 +5,7 @@ import {  normalActiveToolsClassName,  normalToolsClassName, toolItems } from '.
 
 const ToolsNav = () => {
     return (
-        <div className='border-bottom'>
+        <div className='border-bottom sticky top-[72px] z-30 bg-white'>
         <div className="flex items-center justify-around px-4 py-2">
 
           {

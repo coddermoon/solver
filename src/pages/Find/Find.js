@@ -10,7 +10,7 @@ const Find = () => {
     return (
         <div className='max-w-[560px] mx-auto bg-green-400 my-5'>
             
-            <div className="askForm bg-white p-4   custom-shadow">
+            <div className="askForm bg-white p-3   custom-shadow">
 
                 <form  className='flex gap-2'>
                     <input

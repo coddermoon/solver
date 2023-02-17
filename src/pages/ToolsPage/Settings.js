@@ -2,7 +2,7 @@ import React from 'react';
 
 const Settings = () => {
     return (
-        <div className='flex items-center justify-center py-10 mt-10'>
+        <div className='flex items-center justify-center py-10'>
             <div>
                 <div className="profile flex items-center justify-center ">
                     <img className='w-[150px] h-[150px] rounded-full borderCustom ' src="https://img.freepik.com/free-photo/portrait-happy-young-woman-looking-camera_23-2147892777.jpg" alt="" />
