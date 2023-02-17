@@ -1,29 +1,29 @@
 import React from "react";
 import { AiOutlineQuestionCircle } from "react-icons/ai";
-import userPhoto from "../assets/images/users.png";
+import userPhoto from "../assets/images/tg.svg";
 import UserNav from "../pages/shared/Navbar/UserNav";
 // import UserSolvedNav from "../pages/shared/Navbar/UserSolvedNav";
 
 const Ranks = () => {
   return (
-    <div className="md:max-w-[50%] mx-auto  my-3">
+    <div className="max-w-[560px] mx-auto  my-3">
       <div className="bg-white  shadow-md">
         <div className="flex justify-between items-center px-5 py-3 ">
           <div className="usersInfo flex items-center justify-center gap-5">
-            <div className="profilePic w-[120px] h-[120px] bg-bgColor flex items-center justify-center">
+            <div className="profilePic w-[60px] h-[60px] bg-bgColor flex items-center justify-center">
               <img src={userPhoto} alt="profile pic" />
             </div>
             {/* pfolile info */}
             <div className="profileInfo">
-              <p className="text-textColor text-lg">User Name</p>
-              <p className="text-textColor text-lg">Occupation</p>
+              <p className="text-textColor text-lg">Rank</p>
+              <p className="text-textColor text-lg">Date</p>
             </div>
           </div>
           {/* points */}
           <div className="poients ">
-            <div className="flex gap-5">
+            <div className="grid grid-cols-3 gap-5">
               <p className="text-textColor text-lg flex items-center justify-center gap-3">
-                <AiOutlineQuestionCircle /> 000000
+                <AiOutlineQuestionCircle />
               </p>
               <p className="text-textColor text-lg flex items-center justify-center gap-3">
                 <AiOutlineQuestionCircle /> 000000
@@ -35,7 +35,7 @@ const Ranks = () => {
 
             {/* next */}
 
-            <div className="flex gap-5">
+            <div className="grid grid-cols-3">
               <p className="text-textColor text-lg flex items-center justify-center gap-3">
                 <AiOutlineQuestionCircle /> 000000
               </p>
