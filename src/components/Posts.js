@@ -5,8 +5,13 @@ const Posts = () => {
        
             
             <div className="askForm bg-white mt-5" style={{boxShadow:'0px 1px 2px rgba(0, 0, 0, 0.25)'}}>
+                <div className="header flex justify-between px-3 pt-2 ">
+                    <h2 className='text-darkShade'>Category Name</h2>
+<div className='flex gap-2'>                    <p>...</p>
+                    <p>+</p></div>
+                </div>
 
-               <p className='text-xl text-justify   p-3 '><span className="heading text-textColor">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, voluptas?</span>
+               <p className='text-lg text-justify   px-3 py-1'><span className="heading text-textColor">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, voluptas?</span>
 <span className="paragraph text-darkShade text-lg">Lorem ipsum dolor sit amet consectetur  elit. Quos, soluta ... </span><button className='text-primaryColor'> more</button></p>
 
 <div className="footer flex justify-around items-center mt-1 userNav  p-2 ">

@@ -23,10 +23,11 @@ export const normalActiveToolsClassName="  p-2  rounded-full flex gap-2 items-ce
 // user nav Items
 
 export const userNavItems = [
-    {name:'Ask',path:'/users/ask'},
-    {name:'Ans',path:'/users/ans'},
-    {name:'Save',path:'/users/save'},
-    {name:'Mate',path:'/users/mate'},
+    // {name:'Ask',path:'/users/ask',},
+    // {name:'Ans',path:'/users/ans'},
+    // {name:'Save',path:'/users/save'},
+    // {name:'Mate',path:'/users/mate'},
+    {name:'Data',path:'/users/data'},
     {name:'Info',path:'/users/info'},
 ]
 
@@ -51,3 +52,4 @@ export const toolItems = [
     {name: 'Bell',icons:AiOutlineBell,path:'/tools/bella'},
     {name: 'Bell',icons:FiSettings ,path:'/tools/settings'},
 ]
+

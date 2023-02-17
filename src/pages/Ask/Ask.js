@@ -9,7 +9,7 @@ const Ask = () => {
     
    
     return (
-        <div className='md:max-w-[50%] mx-auto bg-green-400 my-3'>
+        <div className='max-w-[560px] mx-auto bg-green-400 my-3'>
             
             <div className="askForm bg-white p-3" style={{boxShadow:'0px 1px 2px rgba(0, 0, 0, 0.25)'}}>
 
