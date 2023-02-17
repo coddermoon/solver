@@ -1,56 +1,58 @@
-import React from 'react';
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import TaskCard from "../../components/TaskCard";
 
 const UserData = () => {
-    return (
-        <div className='max-w-[560px] mx-auto bg-white   custom-shadow  my-4 p-5 '>
-            <div className="main-content">
+  const [taskData, setTaskData] = useState([]);
+  const [data, setData] = useState([]);
 
-                {/* task section */}
-               <div className="task">
-               <h3 className='text-center text-xl font-bold mb-5'>Task</h3>
-
-            <div className="grid grid-cols-3 gap-5">
-                
-                <div className=' p-2'>
-                    <p className='bg-bgColor px-3 text-center text-textColor'>Pending</p>
-                    <p className='bg-bgColor px-3 text-center text-textColor'>0</p>
-
-                </div>
-                <div className=' p-2'>
-                    <p className='bg-bgColor px-3 text-center text-textColor'>Ans Pending</p>
-                    <p className='bg-bgColor px-3 text-center text-textColor'>0</p>
-
-                </div>
-                <div className=' p-2'>
-                    <p className='bg-bgColor px-3 text-center text-textColor'>Save ask</p>
-                    <p className='bg-bgColor px-3 text-center text-textColor'>0</p>
-
-                </div>
-                {/* second part */}
-                <div className=' p-2'>
-                    <p className='bg-bgColor px-3 text-center text-textColor'>Post reply</p>
-                    <p className='bg-bgColor px-3 text-center text-textColor'>0</p>
-
-                </div>
-                <div className=' p-2'>
-                    <p className='bg-bgColor px-3 text-center text-textColor'>Mate request</p>
-                    <p className='bg-bgColor px-3 text-center text-textColor'>0</p>
-
-                </div>
-                <div className=' p-2'>
-                    <p className='bg-bgColor px-3 text-center text-textColor'>Draft create</p>
-                    <p className='bg-bgColor px-3 text-center text-textColor'>0</p>
-
-                </div>
-                
+  useEffect(() => {
+    axios
+      .get("/fakedata/taskFakeData.json")
+      .then((res) => setTaskData(res.data));
+  }, []);
 
 
-            </div>
 
-               </div>
-            </div>
+//   load information of data section
+  useEffect(() => {
+    axios
+      .get("/fakedata/dataFakeData.json")
+      .then((res) => setData(res.data));
+  }, []);
+
+  console.log(taskData);
+
+  return (
+    <div className="max-w-[560px] mx-auto bg-white   custom-shadow  my-4 p-5 ">
+      <div className="main-content">
+        {/* task section */}
+        <div className="task">
+          <h3 className="text-center text-xl font-bold mb-5">Task</h3>
+
+          <div className="grid grid-cols-3 gap-5">
+            {taskData.map((taskData) => (
+              <TaskCard key={taskData._id} taskData={taskData} />
+            ))}
+          </div>
+
+          {/* dataSection */}
+
+                  {/* task section */}
+        <div className="my-6">
+          <h3 className="text-center text-xl font-bold mb-5">Data</h3>
+
+          <div className="grid grid-cols-4 gap-5">
+            {data.map((taskData) => (
+              <TaskCard key={taskData._id} taskData={taskData} />
+            ))}
+          </div>
         </div>
-    );
+
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default UserData;
