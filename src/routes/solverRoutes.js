@@ -3,6 +3,7 @@ import ProfileLayout from "../Layout/ProfileLayout";
 import Tools from "../Layout/Tools";
 
 import Ask from "../pages/Ask/Ask";
+import CreatePost from "../pages/CreatePost/CreatePost";
 import Find from "../pages/Find/Find";
 import Info from "../pages/Profiles/Info";
 import UserAsk from "../pages/Profiles/UserAsk";
@@ -31,6 +32,10 @@ const solverRoutes = createBrowserRouter([
       {
         path: "/find",
         element: <Find />,
+      },
+      {
+        path: "/create-post",
+        element: <CreatePost />,
       },
     ],
   },

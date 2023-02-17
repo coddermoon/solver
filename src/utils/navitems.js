@@ -5,16 +5,16 @@ import { FiSearch, FiSettings } from "react-icons/fi";
 
 export const navItems = [
 {name: 'Ask',icons:AiOutlineQuestionCircle,path:'/ask'},
+{name: 'Post',icons:AiOutlineBell,path:'/create-post'},
 {name: 'Find',icons:FiSearch,path:'/find'},
 {name: 'You',icons:AiOutlineUser,path:'/users'},
-{name: 'Bell',icons:AiOutlineBell,path:'/bell'},
 
 ]
 
 
 // export css classs for main nevigations
 
-export const activeClassName=" bg-primaryColor  p-2 md:px-3 md:py-2  rounded-full flex gap-2 items-center text-md  md:text-lg  leading-5 text-white m-2"
+export const activeClassName=" bg-primaryColor  p-2 md:px-3 md:py-1  rounded-full flex gap-2 items-center text-md  md:text-lg  leading-5 text-white m-2"
 export const normalClassName="  p-1  md:px-3 md:py-2 rounded-full flex gap-2 items-center   text-lg  leading-5 text-primaryColor hover:bg-bgColor m-2 hover:bg-bgColor"
 export const normalToolsClassName="hover:bg-bgColor  p-2  rounded-full flex gap-2 items-center   text-lg  leading-5 text-primaryColor m-2 "
 export const normalActiveToolsClassName="  p-2  rounded-full flex gap-2 items-center   text-lg  leading-5 text-white bg-primaryColor m-2 "

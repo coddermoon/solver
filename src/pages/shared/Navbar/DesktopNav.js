@@ -15,11 +15,11 @@ const DesktopNav = () => {
       <div className="flex items-center justify-around px-4">
         <div className="flex items-center justify-center">
           <img src={logo} alt="Logo" className="h-8" />
-          <span className="ml-2  text-xl font-medium text-primaryColor">
+          <span className="ml-2  hidden md:block text-xl font-medium text-primaryColor">
             Solver
           </span>
         </div>
-        <div className=" flex">
+        <div className=" flex max-w-[560px] justify-between">
           {navItems.map((navItem, index) => (
           <NavLink
               key={index}
@@ -40,7 +40,7 @@ const DesktopNav = () => {
               isActive ? activeClassName : normalClassName
             }
           >
-            <FiSettings /> Tools
+            <FiSettings /> <span className="hidden md:block"> Tools</span>
           </NavLink>
         </div>
       </div>
