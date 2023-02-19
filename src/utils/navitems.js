@@ -31,7 +31,7 @@ export const userNavItems = [
     // {name:'Ans',path:'/users/ans'},
     // {name:'Save',path:'/users/save'},
     // {name:'Mate',path:'/users/mate'},
-    {name:'Data',path:'/users/data'},
+    {name:'Data',path:'/users/'},
     {name:'Info',path:'/users/info'},
 ]
 

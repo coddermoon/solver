@@ -1,5 +1,6 @@
 import React from 'react';
 import { FiEdit } from 'react-icons/fi';
+import UserNav from '../shared/Navbar/UserNav';
 
 const Info = () => {
     return (
@@ -8,6 +9,7 @@ const Info = () => {
 
             
                 <div className='w-[80%] mx-auto text-right'>
+                <UserNav />
                     <span className=  ' inline-flex text-primaryColor hover:bg-bgColor text-lg items-center ml-auto gap-3 px-2  '><FiEdit/> Edit</span>
                 </div>
           

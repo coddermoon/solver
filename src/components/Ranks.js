@@ -1,15 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { AiOutlineQuestionCircle } from "react-icons/ai";
+import { useLocation, useNavigate } from "react-router-dom";
 import userPhoto from "../assets/images/tg.svg";
-import DataLayout from "../Layout/DataLayout";
-import Info from "../pages/Profiles/Info";
-import UserData from "../pages/Profiles/UserData";
-import UserNav from "../pages/shared/Navbar/UserNav";
-// import UserSolvedNav from "../pages/shared/Navbar/UserSolvedNav";
+
+
 
 const Ranks = () => {
+
+
+
   return (
-    <div className="max-w-[560px] mx-auto  my-3">
+    <div className="max-w-[560px] mx-auto  mt-3">
       <div className="bg-white  shadow-md">
         <div className="flex justify-between items-center p-3 ">
           <div className="usersInfo flex items-center justify-center gap-2 ">
@@ -55,9 +56,9 @@ const Ranks = () => {
 {/* nav Section */}
         <div className="userNav   py-3   ">
      
-     <UserNav />
+    
 {/* <Info/> */}
-<UserData/>
+{/* <UserData/> */}
 
    </div>
 

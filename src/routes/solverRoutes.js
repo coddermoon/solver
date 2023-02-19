@@ -48,16 +48,13 @@ const solverRoutes = createBrowserRouter([
         path: "*",
         element: <CommingSoon />,
       },
+
       {
-        path: "/users/info",
-        element: <Info />,
+        path:'/users/info',
+        element:<Info/>
       },
       {
-        path: "/users/ask",
-        element: <UserAsk />,
-      },
-      {
-        path:'/users/data',
+        path:'/users/',
         element:<UserData/>
       }
     ],
