@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FiSearch } from 'react-icons/fi';
 import {BiSliderAlt} from 'react-icons/bi'
+import Posts from '../../components/Posts';
 const FormBtn = {name:'Filter',icons:FiSearch }
 const FormInputData  = {inputPlaceholder:'Search what you want'}
 
@@ -28,8 +29,11 @@ focused ? <button className="text-xl p-2  bg-primaryColor  rounded-full  border 
                     }
                     
                 </form>
+              
 
             </div>
+
+            <Posts/>
 
 
         </div>
